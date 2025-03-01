@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("img/1.jpg") no-repeat center;
+    background: url("img/profile.jpeg") no-repeat center;
     height: 100vh;
     color: black;
     min-height: 500px;
@@ -655,6 +655,142 @@ footer p{
     .services .serv-content .card{
         width: 100%;
     }
+}
+.skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skills .subtitle {
+    font-size: 18px;
+    color: #ff6f61; /* Highlight color */
+    margin-bottom: 20px;
+}
+
+.skills .skills-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 40px; /* Increased spacing */
+}
+
+.skills .column {
+    width: 45%; /* Slightly smaller width for balance */
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #444;
+    padding-left: 30px;
+    position: relative;
+}
+
+.skills-list li::before {
+    content: "✔";  /* Changed from 🔹 to ✔ for a cleaner look */
+    color: #007bff;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .skills .skills-content {
+        flex-direction: column; /* Stack columns on small screens */
+        align-items: center;
+    }
+    .skills .column {
+        width: 100%;
+    }
+}
+
+.education .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px; 
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',
+}
+
+.education-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px; /* Match the width with other titles */
+    height: 3px;
+    background: #111; /* Match the background color with other titles */
+    transform: translateX(-50%);
+}
+.education .title::after {
+    content: "my degrees ";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px; /* Match the font size with other titles */
+    color: tomato; /* Match the color with other titles */
+    padding: 0 5px;
+    background: #fff; /* Match the background with other titles */
+    transform: translateX(-50%);
+}
+.edu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.edu-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.edu-item p {
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.edu-item .location {
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    right: 200px;  /* Adjust to properly align with the date */
+}
+
+.edu-item .date {
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
 }
 
 @media (max-width: 500px) {
