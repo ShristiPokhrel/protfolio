@@ -163,6 +163,7 @@ section .title::after{
 
 
 /* home section styling */
+
 .home{
     display: flex;
     background: url("img/profile.jpeg") no-repeat center;
